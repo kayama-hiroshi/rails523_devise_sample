@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Devise Test</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#devise_sample_navbars" aria-controls="devise_sample_navbars" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <% if user_signed_in? %>
+  <%= render :partial => "partial/menu_logged_in" %>
+  <% else %>
+  <%= render :partial => "partial/menu_default" %>
+  <% end %>
+</nav>
+
